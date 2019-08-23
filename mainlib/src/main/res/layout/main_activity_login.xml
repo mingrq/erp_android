@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:background="@mipmap/guide_login_bg"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp">
+
+    <com.ming.circleimageview_lib.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/main_shape_login_btn_bg"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_shape_login_ed_bg"
+        android:textSize="14sp"
+        android:paddingLeft="20dp"
+        android:hint="用户名"
+        android:textColorHint="#ffffff"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_shape_login_ed_bg"
+        android:textSize="14sp"
+        android:paddingLeft="20dp"
+        android:hint="密码"
+        android:textColorHint="#ffffff"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="登录"
+        android:background="@drawable/main_shape_login_btn_bg"
+        android:layout_marginTop="30dp"/>
+</LinearLayout>

@@ -1,0 +1,59 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 28
+
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    //阿里ARouter
+    api "com.alibaba:arouter-api:$arouter_api_version"
+    //圆形图片
+    api 'com.github.mingrq:CircleImageView:1.0.1'
+
+    //定时按钮
+    api 'com.github.mingrq:TimingButton:2.0.0'
+
+    //权限检测
+    api 'com.github.mingrq:AccessPermission:1.0.0'
+
+    //网络连接检测
+    api 'com.github.mingrq:NetworkChangeReceiver:1.0.0'
+
+    //app版本工具
+    api 'com.github.mingrq:AppVersionUtils:1.0.0'
+
+    //PullLoadMoreRecyclerView
+    api 'com.github.mingrq:PullLoadMoreRecyclerView:1.0.0'
+
+    //状态栏设置
+    // 基础依赖包，必须要依赖
+    api 'com.gyf.immersionbar:immersionbar:3.0.0-beta05'
+    // fragment快速实现（可选）
+    api 'com.gyf.immersionbar:immersionbar-components:3.0.0-beta05'
+}
