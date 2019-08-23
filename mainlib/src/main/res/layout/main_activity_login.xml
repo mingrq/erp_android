@@ -9,8 +9,8 @@
     android:paddingRight="50dp">
 
     <com.ming.circleimageview_lib.CircleImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="100dp"
         android:background="@drawable/main_shape_login_btn_bg"/>
@@ -23,7 +23,7 @@
         android:paddingLeft="20dp"
         android:hint="用户名"
         android:textColorHint="#ffffff"
-        android:layout_marginTop="30dp"/>
+        android:layout_marginTop="60dp"/>
 
     <EditText
         android:layout_width="match_parent"
@@ -33,7 +33,7 @@
         android:paddingLeft="20dp"
         android:hint="密码"
         android:textColorHint="#ffffff"
-        android:layout_marginTop="30dp"/>
+        android:layout_marginTop="10dp"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -41,5 +41,5 @@
         android:gravity="center"
         android:text="登录"
         android:background="@drawable/main_shape_login_btn_bg"
-        android:layout_marginTop="30dp"/>
+        android:layout_marginTop="40dp"/>
 </LinearLayout>
